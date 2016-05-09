@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table to json converter</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="converter.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <div class="container">
+        <h1>Convert html table to json</h1>
+        <div class="row">
+            <div class="col-xs-6">
+                <textarea rows="20" placeholder="Please paste you html table code here" id="tableData" value=""></textarea>
+            </div>
+            <div class="col-xs-6">
+                <textarea rows="20" placeholder="Please paste you json table here" id="jsonData"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary center-block" onclick="convertTable()" id="convertButton">Convert</button>
+            </div>
+        </div>    
+        <br>
+        
+        <div id="table" class="hidden"></div>
+       </div>
+</body>
+</html>
+
+<!-- <table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Anna</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>Arty</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Simon</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>37</td>
+        </tr>
+        <tr>
+            <td>Harry</td>
+            <td>27</td>
+        </tr>
+    </tbody>
+</table> -->
