@@ -13,21 +13,29 @@
         <h1>Convert html table to json</h1>
         <div class="row">
             <div class="col-xs-6">
-                <textarea rows="20" placeholder="Please paste you html table code here" id="tableData" value=""></textarea>
+                <textarea rows="20" placeholder="Please paste you html table code here" id="tableTextarea" value=""></textarea>
             </div>
             <div class="col-xs-6">
-                <textarea rows="20" placeholder="Please paste you json table here" id="jsonData"></textarea>
+                <textarea rows="20" placeholder="Please paste you json table here" id="jsonTextarea"></textarea>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-12">
-                <button class="btn btn-primary center-block" onclick="convertTable()" id="convertButton">Convert</button>
+            <div class="col-xs-6">
+                <button class="btn btn-primary center-block" onclick="convertTable()" id="convertButton">Convert table to JSON</button>
+            </div>
+            <div class="col-xs-6">
+                 <button class="btn btn-primary center-block" onclick="convertJson()" id="convertJsonButton">Convert JSON to table</button>
             </div>
         </div>    
         <br>
+        <div class="row">
+            <button class="btn btn-success center-block" onclick="resetAll()" id="resetButton">Reset</button>
+        </div> 
         
-        <div id="table" class="hidden"></div>
+        <div id="htmlTable" class="hidden"></div>
+        <div id="jsonTable" class="hidden"></div>
+
        </div>
 </body>
 </html>
@@ -62,3 +70,7 @@
         </tr>
     </tbody>
 </table> -->
+
+<!--
+[{"Name":"Anna","Age":"14"},{"Name":"Arty","Age":"15"},{"Name":"Simon","Age":"17"},{"Name":"Sara","Age":"37"},{"Name":"Harry","Age":"27"}]
+-->
