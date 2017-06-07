@@ -1,5 +1,6 @@
 # table-to-json-converter
 Online tool to convert html table code data to json object
+[http://alexbokii.github.io/table-to-json-converter/index.html](http://alexbokii.github.io/table-to-json-converter/index.html).
 
 Example:
 Output of the code
